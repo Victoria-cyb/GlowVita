@@ -1,0 +1,1451 @@
+* {
+margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url(images/blurry-gradient-haikei\ \(1\).png);
+   background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 1000vh;
+
+}
+
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    border: 1px solid transparent;
+    background-color: #f8c9dd;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    padding: 20px 20px;
+    transform: translateX(-50%);
+    z-index: 1000;
+    border-radius: 50px; 
+    
+}
+
+#header a {
+    text-decoration: none;
+    color: #333;
+}
+
+#header h1 {
+    font-size: 16px;
+    color: #a3823b;
+    padding: 20px 25px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+#navlist {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+
+#navlist li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+#navlist li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#navlist li a:hover,
+#navlist li a.active {
+    color: blue;
+}
+
+#menu {
+    display: none;
+    align-items: center;
+    margin-right: 20px;
+}
+
+#close {
+    display: none;
+}
+
+#home {
+    margin-top: 250px;
+}
+
+.home-content {
+    display: flex;
+    margin-left: 80px;
+    gap: 80px;
+}
+
+/* .text {
+    margin-top: 50px;
+} */
+
+.home-content div h1 {
+    font-size: 50px;
+     color: #333;
+}
+
+.home-content div p {
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 400;
+    color: aliceblue;
+    font-style: italic;
+}
+
+.img img {
+    border-radius: 200px 200px 0 0;
+}
+
+.home-content #btn {
+    display: inline-block;
+       color: #333;
+    background-color: aliceblue;
+    border: 1px solid aliceblue;
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+#btn a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.products-content {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 50px;
+    border-bottom: 1px solid whitesmoke;
+}
+.products-content h4 {
+    font-size: 50px;
+    color: #333;
+}
+
+.product p {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-style: italic;
+}
+
+.product img {
+    width: 250px;
+    height: 380px;
+    border-radius: 150px;
+    margin-top: 20px;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.product-card img {
+    margin-top: 30px;
+    margin-left: 180px;
+    /* display: flex; */
+    
+}
+
+.product-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.product-text {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    color: #333;
+    font-weight: 600;
+}
+.services-text h5 {
+    font-size: 20px;
+    color:aliceblue;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.service p {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-style: italic;
+}
+
+.servimg {
+    margin-top: 100px;
+    height: 550px;
+   padding-left: 20px;
+    padding-right: 10px;
+   padding-top: 20px;
+   padding-bottom: 120px;
+   background-color: aliceblue;
+}
+
+.serv-texts {
+    margin-top: 50px;
+    width: 80%;
+    padding: 20px 20px;
+    margin-left: 140px;
+}
+
+.serv-text {
+    display: flex;
+    padding: 20px 20px;
+    gap: 20px;
+}
+
+.serv-text h1 {
+    word-wrap: break-word;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.work p {
+    font-style: normal;
+    font-size: 20px;
+    text-align: justify;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.about p {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-style: italic;
+}
+
+.about-pure {
+    display: flex;
+    gap: 50px;
+    background-image: url(images/pexels-kseniachernaya-8054395.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 530px;
+    margin-top: 80px;
+    padding-left: 350px;
+    padding-top: 40px;
+    
+}
+
+.about-pure  img {
+    border-radius: 80px 50px;
+}
+
+.abopic {
+    width: 50%;
+    
+}
+
+.abopic h3 {
+color: #db3a80;
+font-weight: 400;
+}
+
+.abopic h4 {
+    font-weight: 500;
+    font-size: 34px;
+}
+
+.abopic p {
+    color: white;
+    text-align: justify;
+    font-size: 18px;
+    font-style: normal;
+}
+
+.abobeat {
+    display: flex;
+    gap: 50px;
+    margin-top: 40px;
+    width: 80%;
+    margin-left: 90px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+
+}
+.abobeat h4 {
+    font-size: 34px;
+    font-weight: 400;
+}
+
+.abobeat p {
+    color: white;
+    text-align: justify;
+    font-size: 15px;
+    font-style: normal;
+}
+
+.boxes {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+}
+
+.box {
+    height: 180px;
+    width: 180px;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    
+    
+}
+
+.images {
+     height: 180px;
+    width: 180px;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+}
+
+.exp {
+    position: absolute;
+    font-size: 80px;
+    margin-top: 6px;
+    margin: 20px;
+    color: aliceblue;
+}
+
+
+
+.box h4 {
+    
+    font-size: 24px;
+    margin-top: 0;
+    padding: 10px ;
+    color: #db3a80;
+}
+
+.box p {
+    font-size: 7px;
+    font-weight: 600;
+    color: #db3a80;
+    padding: 0 10px 0 10px ;
+}
+
+.abobeats {
+    background-image: url(images/White\ cosmetic\ product\ tube\ mock\ up\ with\ splashes….jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+     display: flex;
+    gap: 50px;
+    margin-top: 40px;
+    
+   
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+}
+
+.abobeats h4 {
+    font-size: 34px;
+    font-weight: 400;
+}
+
+.abobeats p {
+    color: #333;
+    text-align: justify;
+    font-weight: 400;
+    font-size: 15px;
+    font-style: normal;
+}
+
+.contact p {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-style: italic;
+}
+
+.abopics h3 {
+color: #db3a80;
+font-weight: 400;
+}
+
+.conpic {
+    display: flex;
+    gap: 30px;
+    padding: 100px 100px 100px 50px;
+    width: 90%;
+    margin-left: 100px;
+    margin-right: 200px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.cont h4 {
+    font-weight: 500;
+    font-size: 20px;
+   
+}
+
+.details {
+
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.flex {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.flex p {
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.value h2 {
+font-weight: 400;
+font-size: 15px;
+}
+
+.socials-text h2 {
+   font-weight: 500;
+   font-size: 12px;
+   margin-top: 40px;
+   margin-bottom: 20px;
+}
+
+.socials img{
+    margin-left: 10px;
+}
+
+.float {
+ height: 425px;
+    width: 350px;
+    background-color: white;
+    position: absolute;
+    top: 170px;
+     left: 600px;
+     padding: 10px 40px 40px 40px;
+     
+}
+
+.form h3 {
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.form p {
+    color: #333;
+    font-style: normal;
+    font-size: 15px;
+    text-align: left;
+}
+
+.form form input,
+.form form textarea {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #db3a80;
+    padding: 10px;
+}
+
+
+.form form textarea {
+    height: 150px;
+}
+
+.form form button {
+ display: inline-block;
+       color: #333;
+    background-color: #f8c9dd;
+    border: 1px solid #f8c9dd;
+    border-radius: 50px;
+    padding: 5px 10px;
+    font-weight: 500;
+    margin-left: 150px;
+    
+}
+
+
+
+
+
+
+
+
+/* Responsive css */
+
+
+
+
+
+
+
+
+* {
+margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url(images/blurry-gradient-haikei\ \(1\).png);
+   background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+     overflow-x: hidden;
+    
+
+}
+
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    border: 1px solid transparent;
+    background-color: #f8c9dd;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    padding: 20px 20px;
+    transform: translateX(-50%);
+    z-index: 1000;
+    border-radius: 50px; 
+    
+}
+
+#header a {
+    text-decoration: none;
+    color: #333;
+}
+
+#header h1 {
+    font-size: 16px;
+    color: #a3823b;
+    padding: 20px 25px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+#navlist {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+
+#navlist li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+#navlist li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#navlist li a:hover,
+#navlist li a.active {
+    color: blue;
+}
+
+#menu {
+    display: none;
+    align-items: center;
+    margin-right: 20px;
+}
+
+#close {
+    display: none;
+}
+
+#home {
+    margin-top: 250px;
+}
+
+.home-content {
+    display: flex;
+    margin-left: 80px;
+    gap: 80px;
+}
+
+/* .text {
+    margin-top: 50px;
+} */
+
+.home-content div h1 {
+    font-size: 50px;
+     color: #333;
+}
+
+.home-content div p {
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 400;
+    color: aliceblue;
+    font-style: italic;
+}
+
+.img img {
+    border-radius: 200px 200px 0 0;
+}
+
+.home-content #btn {
+    display: inline-block;
+       color: #333;
+    background-color: aliceblue;
+    border: 1px solid aliceblue;
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+#btn a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.products-content {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 50px;
+    border-bottom: 1px solid whitesmoke;
+}
+.products-content h4 {
+    font-size: 50px;
+    color: #333;
+}
+
+.product p {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-style: italic;
+}
+
+.product img {
+    width: 250px;
+    height: 380px;
+    border-radius: 150px;
+    margin-top: 20px;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.product-card img {
+    margin-top: 30px;
+    margin-left: 180px;
+    /* display: flex; */
+    
+}
+
+.product-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.product-text {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    color: #333;
+    font-weight: 600;
+}
+.services-text h5 {
+    font-size: 20px;
+    color:aliceblue;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.service p {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-style: italic;
+}
+
+.servimg {
+    margin-top: 100px;
+    height: 550px;
+   padding-left: 20px;
+    padding-right: 10px;
+   padding-top: 20px;
+   padding-bottom: 120px;
+   background-color: aliceblue;
+}
+
+.serv-texts {
+    margin-top: 50px;
+    width: 80%;
+    padding: 20px 20px;
+    margin-left: 140px;
+}
+
+.serv-text {
+    display: flex;
+    padding: 20px 20px;
+    gap: 20px;
+}
+
+.serv-text h1 {
+    word-wrap: break-word;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.work p {
+    font-style: normal;
+    font-size: 20px;
+    text-align: justify;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.about p {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-style: italic;
+}
+
+.about-pure {
+    display: flex;
+    gap: 50px;
+    background-image: url(images/pexels-kseniachernaya-8054395.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 530px;
+    margin-top: 80px;
+    padding-left: 350px;
+    padding-top: 40px;
+    
+}
+
+.about-pure  img {
+    border-radius: 80px 50px;
+}
+
+.abopic {
+    width: 50%;
+    
+}
+
+.abopic h3 {
+color: #db3a80;
+font-weight: 400;
+}
+
+.abopic h4 {
+    font-weight: 500;
+    font-size: 34px;
+}
+
+.abopic p {
+    color: white;
+    text-align: justify;
+    font-size: 18px;
+    font-style: normal;
+}
+
+.abobeat {
+    display: flex;
+    gap: 50px;
+    margin-top: 40px;
+    width: 80%;
+    margin-left: 90px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+
+}
+.abobeat h4 {
+    font-size: 34px;
+    font-weight: 400;
+}
+
+.abobeat p {
+    color: white;
+    text-align: justify;
+    font-size: 15px;
+    font-style: normal;
+}
+
+.boxes {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+}
+
+.box {
+    height: 180px;
+    width: 180px;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    
+    
+}
+
+.images {
+     height: 180px;
+    width: 180px;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+}
+
+.exp {
+    position: absolute;
+    font-size: 80px;
+    margin-top: 6px;
+    margin: 20px;
+    color: aliceblue;
+}
+
+
+
+.box h4 {
+    
+    font-size: 24px;
+    margin-top: 0;
+    padding: 10px ;
+    color: #db3a80;
+}
+
+.box p {
+    font-size: 7px;
+    font-weight: 600;
+    color: #db3a80;
+    padding: 0 10px 0 10px ;
+}
+
+.abobeats {
+    background-image: url(images/White\ cosmetic\ product\ tube\ mock\ up\ with\ splashes….jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+     display: flex;
+    gap: 50px;
+    margin-top: 40px;
+    
+   
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+}
+
+.abobeats h4 {
+    font-size: 34px;
+    font-weight: 400;
+}
+
+.abobeats p {
+    color: #333;
+    text-align: justify;
+    font-weight: 400;
+    font-size: 15px;
+    font-style: normal;
+}
+
+.contact p {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-style: italic;
+}
+
+.abopics h3 {
+color: #db3a80;
+font-weight: 400;
+}
+
+.conpic {
+    display: flex;
+    gap: 30px;
+    padding: 100px 100px 100px 50px;
+    width: 90%;
+    margin-left: 100px;
+    margin-right: 200px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.cont h4 {
+    font-weight: 500;
+    font-size: 20px;
+   
+}
+
+.details {
+
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.flex {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.flex p {
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.value h2 {
+font-weight: 400;
+font-size: 15px;
+}
+
+.socials-text h2 {
+   font-weight: 500;
+   font-size: 12px;
+   margin-top: 40px;
+   margin-bottom: 20px;
+}
+
+.socials img{
+    margin-left: 10px;
+}
+
+.float {
+ height: 425px;
+    width: 350px;
+    background-color: white;
+    position: absolute;
+    top: 170px;
+     left: 600px;
+     padding: 10px 40px 40px 40px;
+     
+}
+
+.form h3 {
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.form p {
+    color: #333;
+    font-style: normal;
+    font-size: 15px;
+    text-align: left;
+}
+
+.form form input,
+.form form textarea {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #db3a80;
+    padding: 10px;
+}
+
+
+.form form textarea {
+    height: 150px;
+}
+
+.form form button {
+ display: inline-block;
+       color: #333;
+    background-color: #f8c9dd;
+    border: 1px solid #f8c9dd;
+    border-radius: 50px;
+    padding: 5px 10px;
+    font-weight: 500;
+    margin-left: 150px;
+    
+}
+
+
+
+
+
+
+
+
+/* Responsive css */
+
+/* Mobile Devices - up to 767px */
+@media (max-width: 767px) {
+    body {
+        min-width: 100vh;
+        
+    }
+    #header {
+        flex-direction: row;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    #navlist {
+        flex-direction: column;
+        margin: 10px 0;
+        display: none; /* hidden by default */
+    }
+
+    #menu {
+        display: flex;
+        cursor: pointer;
+        
+    }
+
+    .home-content {
+        flex-direction: column;
+        margin-left: 40px;
+        margin-right: 40px;
+        gap: 20px;
+    }
+
+    .products-content {
+        width: 100%;
+    }
+
+    .home-content div h1 {
+        font-size: 30px;
+        word-wrap: none;
+    }
+
+
+
+    .home-content div p {
+        font-size: 16px;
+    }
+
+    .product-card,
+    .product-row
+    {
+        flex-direction: row;
+        align-items: center;
+        padding: 40px;
+        margin: 0 auto;
+    }
+
+    .conpic {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        
+         margin: 0 auto; 
+        width: 100%;
+        position: relative;
+    }
+
+   
+
+
+    .about-pure,
+    .abobeat,
+    .abobeats {
+        flex-direction: column;
+
+        
+        
+    }
+
+    .abobeat {
+   
+    margin-top: 20px;
+    width: 100%;
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+
+}
+
+    .abobeattext {
+        padding: 20px;
+    }
+
+    .about-pureimg img {
+        height: 600px;
+        width: 600px;
+        margin-left: 30px;
+
+        align-items: center;
+    }
+
+    .abopic {
+        width: 100%;
+        padding: 20px;
+    }
+
+    
+    .abopic p {
+        color: #333;
+    }
+    
+
+    .product-card img {
+       margin-left: 50px;
+    }
+
+    .servimg {
+        height: 350px;
+    }
+    
+    .servimg img {
+        height: 150px;
+        max-width: 100px;
+    }
+    .about-pure {
+        padding-left: 0;
+        height: auto;
+    }
+
+    .serv-texts {
+        margin-left: 0;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .float {
+        position: static;
+        width: 90%;
+        margin-top: 20px;
+        padding: 20px;
+    }
+
+    
+    
+    .images {
+        width: 280px;
+        height: 180px;
+    }
+
+    .box {
+       width: 280px;
+        height: 180px; 
+        margin-right: 0;
+        padding: 10px;
+    }
+    .product img {
+        width: 150px;
+        height: 220px;
+    }
+
+    .boxes {
+        grid-template-columns: 1fr 1fr;
+        margin-left: 30px;
+        
+    }
+
+    .pexel {
+        display: none;
+    }
+
+    /* .pexel img {
+        height: 350px;
+        width: 350px;
+    } */
+
+    .form form button {
+        margin-left: 350px;
+        width: 25%;
+    }
+}
+
+/* Tablets - 768px to 1024px */
+@media (min-width: 768px)  {
+body {
+  min-width: 105vh;
+}
+
+    .home-content {
+        flex-direction: row;
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 15px;
+    }
+
+    .text {
+        margin-left: 10px;
+        margin-left: 40px;
+    }
+
+   .img {
+    margin-left: 0px;
+   }
+    .product-row,
+    .abobeat,
+    .abobeats,
+    .about-pure,
+    .conpic {
+        flex-direction: row;
+        align-items: center;
+        gap: 100px;
+    }
+
+    .product-card img {
+
+    margin-left: 50px;
+    
+    
+}
+
+   .servimg {
+    height: 405px;
+   }
+
+   .servimg img {
+    height: 200px;
+     width: 175px;
+   }
+     
+
+   .about-pure {
+    flex-direction: row;
+        align-items: center;
+      padding-left: 50px;
+
+    
+}
+       
+   .conpic {
+    flex-direction: row;
+    
+    padding: 50px;
+    width: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 0px;
+    position: relative;
+}
+
+    .pexel {
+        margin-top: 0px;
+    }
+
+    .pexel img {
+        height: 300px;
+    }
+
+
+
+    .float {
+        left: 50%;
+        transform: translateX(-50%);
+        top: auto;
+        position: static;
+        margin-top: 30px;
+    }
+
+    .boxes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .images,
+    .box
+     {
+        width: 180px;
+        height: 180px;
+    }
+
+    .products img
+     {
+        width: 180px;
+        height: 1000px;
+    }
+}
+
+
+@media (min-width: 414px) {
+    .servimg img {
+        height: 150px;
+        max-width: 155px;
+    }
+
+    
+}
+
+@media (min-width: 390px) {
+    .servimg img {
+        max-width: 130px;
+    }
+}
+
+@media (min-width: 430px) {
+   .servimg img {
+        max-width: 145px;
+    } 
+}
+
+@media (min-width: 412px) {
+    .servimg img {
+        max-width: 140px;
+    }
+}
+
+@media (min-width: 360px) {
+    .servimg img {
+        max-width: 110px;
+    }
+}
+
+@media (min-width: 412px) {
+    .servimg img {
+        max-width: 140px;
+    }
+}
+
+
+@media (min-width: 820px) {
+    body {
+        width: 100vw;
+        max-width: 100%;
+         overflow-x: hidden;  
+        margin: 0;
+        padding: 0;
+
+
+    }
+
+    #header {
+    padding: 20px 40px;
+    border-radius: 50px;
+  }
+
+  .home-content {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    gap: 100px;
+  }
+
+  .home-content div h1 {
+    font-size: 60px;
+  }
+
+  .home-content div p {
+    font-size: 22px;
+  }
+
+  .product-card {
+    flex-direction: row;
+    gap: 60px;
+    padding: 0 50px;
+  }
+
+  .about-pure {
+    padding-left: 100px;
+    padding-top: 60px;
+    height: auto;
+  }
+
+  .serv-texts {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 80px;
+  }
+
+  .boxes {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+  }
+
+  .conpic {
+    padding: 50px 150px;
+    gap: 60px;
+    flex-direction: row;
+  }
+
+  .float {
+    left: auto;
+    right: 100px;
+  }
+
+  .form form button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  
+
+
+    .home-content {
+        flex-direction: column;
+    }
+
+    .pexel img {
+        display: none;
+    }
+}
+
+@media (min-width: 1280px) {
+/* body {
+    max-width: 100vw;
+    width: 100%;
+}
+
+     .img {
+        width: 50%;
+    }
+
+    .servimg {
+        width: 100%;
+    }
+
+     .servimg img {
+        width: 280px;
+    
+    } */
+}
+
