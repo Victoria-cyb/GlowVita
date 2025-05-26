@@ -70,7 +70,9 @@ app.post('/send', async (req, res) => {
 });
 
 // Serve static files after routes
-app.use(express.static('frontend'));
+if (process.env.NODE_ENV !== 'production') {
+  app.use(express.static('frontend'));
+}
 
 // Catch-all for debugging
 app.use((req, res) => {
