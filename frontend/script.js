@@ -63,7 +63,8 @@ document.getElementById('contact-form').addEventListener('submit', async (event)
         try {
             result = JSON.parse(text); // Attempt to parse as JSON
         } catch (e) {
-            throw new Error('Invalid JSON response from server');
+            console.error('JSON parse error:', e);
+            throw new Error(`Server error: ${text}`);
         }
 
         if (response.ok) {
@@ -72,11 +73,12 @@ document.getElementById('contact-form').addEventListener('submit', async (event)
             feedbackDiv.textContent = result.message || 'Message sent successfully!';
             form.reset(); // Clear form fields
         } else {
-            throw new Error(result.message || 'Failed to send message');
+            throw new Error(`${result.message || 'Failed to send message'}${result.code ? ` (${result.code})` : ''}`);
         }
     } catch (error) {
         feedbackDiv.style.display = 'block';
         feedbackDiv.style.color = 'red';
         feedbackDiv.textContent = error.message || 'An error occurred. Please try again.';
+        console.error('Form submission error:', error);
     }
 });

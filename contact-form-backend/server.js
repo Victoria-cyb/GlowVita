@@ -24,7 +24,11 @@ const transporter = nodemailer.createTransport({
 
 // Handle form submission
 app.post('/send', async (req, res) => {
-    console.log('Received POST /send request');
+    console.log('Received POST /send request', {
+        headers: req.headers,
+        ip: req.ip,
+        userAgent: req.get('User-Agent'),
+    });
     let form = new multiparty.Form();
     let data = {};
 
@@ -54,7 +58,12 @@ app.post('/send', async (req, res) => {
 
             transporter.sendMail(mail, (err, result) => {
                 if (err) {
-                    console.error('Nodemailer error:', err.message);
+                    console.error('Nodemailer error:', {
+                        message: err.message,
+                        code: err.code,
+                        command: err.command,
+                        stack: err.stack,
+                    });
                     return res.status(500).json({ message: 'Failed to send email', error: err.message });
                 }
                 console.log('Email sent successfully:', result);
